@@ -1,0 +1,61 @@
+# Jupyter Book settings
+
+title: "Purdue Univesrity ENGR 13100"
+author: "Kory Pritchett"
+copyright: "2023"
+logo: ""
+
+# Force notebooks to execute on each build
+execute:
+  execute_notebooks: force
+
+# Parse and render settings
+parse:
+  myst_enable_extensions:
+    # - amsmath
+    - colon_fence
+    # - deflist
+    - dollarmath
+    # - html_admonition
+    # - html_image
+    - linkify
+    - replacements
+    # - smartquotes
+    - substitution
+    - tasklist
+    # - attrs_block
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Add a bibtex file to host citations
+bibtex_bibfiles:
+  - references.bib
+
+# # Information about where the book exists on the web
+# repository:
+#   url: https://github.com/Purdue-FYE/purdue-fye.github.io  # Online location of your book
+#   path_to_book: docs  # Optional path to your book, relative to the repository root
+#   branch: master  # Which branch of the repository should be used when creating links (optional)
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: true
+  use_repository_button: true
+
+# Underlines on Firefox were disappearing when using the default chtml output
+# for mathjax.
+# See:
+# - https://github.com/mathjax/MathJax/issues/2795
+# - https://bugzilla.mozilla.org/show_bug.cgi?id=1741887
+# - https://github.com/executablebooks/jupyter-book/issues/1174#issuecomment-759857170
+sphinx:
+  config:
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js
+    html_static_path: ["_static"]
+    html_css_files: ["custom.css"]
+    html_theme_options:
+      navigation_with_keys: false
