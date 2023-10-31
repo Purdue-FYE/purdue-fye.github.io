@@ -35,10 +35,10 @@ bibtex_bibfiles:
   - references.bib
 
 # # Information about where the book exists on the web
-# repository:
-#   url: https://github.com/Purdue-FYE/purdue-fye.github.io  # Online location of your book
-#   path_to_book: docs  # Optional path to your book, relative to the repository root
-#   branch: master  # Which branch of the repository should be used when creating links (optional)
+repository:
+  url: https://github.com/Purdue-FYE/purdue-fye.github.io  # Online location of your book
+  path_to_book: docs  # Optional path to your book, relative to the repository root
+  branch: master  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
@@ -55,7 +55,5 @@ html:
 sphinx:
   config:
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js
-    html_static_path: ["_static"]
-    html_css_files: ["custom.css"]
     html_theme_options:
       navigation_with_keys: false

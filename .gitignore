@@ -1,0 +1,7 @@
+# Windows Files
+Thumbs.db
+Desktop.ini
+
+# Juptyer Notebook Output
+source/_build/
+source/_build/**/
