@@ -3,7 +3,7 @@
 title: "Purdue Univesrity ENGR 13100"
 author: "Kory Pritchett"
 copyright: "2023"
-logo: ""
+logo: logo.jpg
 
 # Force notebooks to execute on each build
 execute:
