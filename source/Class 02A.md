@@ -119,7 +119,8 @@ float temp = voltage * 100 ;
 #### Goal
 Now that you understand the basics of the TI Kit, it is time to begin using sensors to solve various problems. In this task, you will simply be building a circuit using the TI Kit to play a song that you should know. Can you guess it? To do this, you will need to complete the following:
 1.	Open the {download}`Task1c_Song <class_files\class02a\buzzer_purdue_fight_song.ino>` file in Energia. 
-2.	Before compiling and uploading the sketch, first you need to add to the board. 
+2.	Before compiling and uploading the sketch, first you need to add to the board.
+ 
   a.	Connect the Grove Starter Kit Buzzer to J14 of the Boosterpack using the four-prong connector cable. 
   ```{figure} ./figures/class02a/figure2.png
     :name: fig:2
